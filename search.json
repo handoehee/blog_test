@@ -1,16 +1,23 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "posts/Untitled-2.html",
+    "href": "posts/Untitled-2.html",
+    "title": "my title",
     "section": "",
-    "text": "About this blog"
+    "text": "a=[1,2,3,4]\n\n\na\n\n[1, 2, 3, 4]"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "blog_test",
     "section": "",
-    "text": "About\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "About\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmy title\n\n\n\n\n\n\n\n\n\n\n\nJan 2, 2024\n\n\n한도희\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
   }
 ]

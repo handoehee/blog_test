@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://handoehee.github.io/blog_test/about.html</loc>
-    <lastmod>2024-01-02T12:10:03.636Z</lastmod>
+    <loc>https://handoehee.github.io/blog_test/posts/Untitled-2.html</loc>
+    <lastmod>2024-01-02T12:37:30.540Z</lastmod>
   </url>
   <url>
     <loc>https://handoehee.github.io/blog_test/index.html</loc>
     <lastmod>2024-01-02T12:31:58.356Z</lastmod>
+  </url>
+  <url>
+    <loc>https://handoehee.github.io/blog_test/about.html</loc>
+    <lastmod>2024-01-02T12:10:03.636Z</lastmod>
   </url>
 </urlset>
