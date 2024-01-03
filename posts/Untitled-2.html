@@ -22,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -185,17 +151,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<div id="cell-1" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>a<span class="op">=</span>[<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="cell-2" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="2">
-<pre><code>[1, 2, 3, 4]</code></pre>
-</div>
-</div>
+<section id="파이썬-입문-강의영상-내용" class="level1">
+<h1>파이썬 입문 강의영상 내용</h1>
+<p>개발환경 구축방법이 많다.(공통 맥락을 파악하면 이해하기 쉽다.)</p>
+<p>1세대 프러그래머 python: 윈도우에서 anaconda prompt 실행 -&gt;python ipython: 윈도우에서 anaconda prompt 실행 -&gt;ipython(문법을 알아보기 쉬움-문법강조, ?list와 같이 도움말 기능 동작) 둘 다 저장기능이 없다.</p>
+<p>2세대 프로그래머 메모장 + anaconda prompt 이용(.py를 이용한 python활용) 메모장에 코딩을 하고 파일이름을 mysum.py로 저장 anaconda prompt에서 mysum.py파일이 저장된 폴더로 이동 -&gt; 실행</p>
+<p>3세대 프로그래머 메모장 + ipython ipython에서 !python mysum.py를 입력하면 anaconda prompt에서 python mysum.py를 입력한 것과 같은 효과 ipython에서 %run mysum을 입력하면 메모장에서 mysum.py에 입력된 내용을 복사해서 ipython에 붙여넣어 실행한것과 같은 효과</p>
+<p>4세대 프로그래머 IDE(통합개발환경)를 사용 메모장과 ipython을 하나로 통합한 프로그램이 등장 = jupyter notebook, jupyter lab, idle, VScode 등.. +)주피터의 트릭(실제로 주피터는 ipython에 기생할 뿐 아무런 역할도 안함) *중요한 사실들 -IDE는 내부적으로 연산을 수행하는 능력이 없다. -주피터에서 커널을 재시작한다는 의미는 메모장이 열린채로 ipython을 껏다가 다시 실행한다는 의미 -주피터는 단순히 메모장의 내용을 복사하여 붙여넣는 기계, 하나의 IDE가 여러개의 언어와 연결될 수 있다. -Jupyter lab이라는 프로그램은 크롬에 있는 내용과 ipython간의 통신을 제어하는 프로그램일 뿐이다.</p>
+<p>5세대 프로그래머 가상컴퓨터(anaconda), 원격컴퓨터(server), 클라우드컴퓨터(colab)의 개념 등장 모델1: 원격컴퓨터 준비상태: 전북대 컴퓨터(pyton을 실행, 인터넷 연결O), 우리집 컴퓨터(크롬 실행, 인터넷 연결O) 우리집 노트북-&gt;전북대 컴퓨터-&gt;우리집 노트북 모델2: 원격컴퓨터+가상컴퓨터(환경) 전북대 컴퓨터(논리적으로 3개로 분리 각각 base, py39jl17, py38r40) 논리적으로 분리하면 서로 아무런 타격이 없다. 모델3: 가상컴퓨터 현재 컴퓨터는 base, py39 2개의 컴퓨터로 나누어져 있음 py39에만 주피터랩을 설치 py39, ipython과 여러분의 크롬창이 서로 통신하면서 실습 장점: 서로 다른 환경에 서로다른 파이썬과 R을 설치할 수 있음 = 패키지간의 충돌 최소화 모델4: 클라우드 -사례1 성능이 그저그런 컴퓨터 27개 한사람당 27/5(=5.4)대의 컴퓨터식 할당 -사례2 구글코랩 구글에 여러가지 성능을 가진 컴퓨터 n대 m명의 사람이 n대의 컴퓨터에 접속</p>
+</section>
+<section id="r입문-강의영상-내용" class="level1">
+<h1>R입문 강의영상 내용</h1>
+<p>가상환경, 아나콘다</p>
+<p>가상의 컴퓨터 -컴퓨터라는 것은 어떤 폴더들의 모임 -가상의 컴퓨터: 폴더들의 모임</p>
+<p>아나콘다: 가상의 컴퓨터(=가상 환경)을 쉽게 만들어주는 프로그램 1.아나콘다를 설치함과 동시에 가상환경이 하나 만들어짐 그 환경 이름이 base 2.유저가 새로운 가상환경을 만들 수 있는 기능도 제공함.</p>
+<p>R설치 (1)윈도우에서 직접설치 -프로그램파일즈에 설치됨 -버전은 4.1.1 <em>install packages(“tidyverse”): tidyverse라는 프로그램을 받아서 설치하라. </em>R의 프로그램들은 (1)문서 &gt; R &gt; win-library &gt; 4.1 (2)C &gt; Program Files &gt; R &gt; R-4.1.1 &gt; library에 있다. *library(tidyverse): tidyverse라는 프로그램을 더블클릭해서 실행하라.2</p>
+<p>(2)가상환경에 R을 설치하자. -참고로 우리는 지금 3가지 환경을 커트롤 중 1.윈도우: 4.1.1 설치-&gt; Rstudio(IDE) 2.base 3.ir2021: 4.0.5 설치-&gt;Jupyterlab(IDE) <em>가상환경의 R을 Rstudio로 연결-&gt;가능함-&gt;리눅스에서 가능 </em>윈도우에 설치한 R을 Jupyterlab으로 연결-&gt; 안해봐서 모름</p>
+<p>*가상환경을 만드는 이유: 충돌 오픈소스: 누구나 참여 가능-&gt; 누구나 본인이 만든것을 배포가능 1논문당 1패키지 A. a == eptecompose라는 함수 이름을 ept_decompose B. b C. c</p>
+<p>–&gt; 충돌을 해결하는 방법: 버전을 맞춰준다 v1.0 -&gt; v1.2 – a v 2.3 b v 1.9 c v 0.2</p>
+<p>채널 conda-forge r pytorch …</p>
+<p>conda install -c conda-forge c</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
